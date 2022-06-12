@@ -54,6 +54,11 @@ $ cat examples/main.tf
 ```
 
 ```terraform
+module "vm" {
+  source = "<TFE URL>/mycorp/rm/azurerm"
+  version = "0.1.0"
+}
+
 module "consul" {
   source = "hashicorp/consul/aws"
   version = "~0.7.3"
